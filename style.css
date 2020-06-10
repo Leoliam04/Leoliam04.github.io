@@ -57,3 +57,11 @@
     padding-bottom:4%;
 }
 
+.dividing {
+    padding-bottom: 10%;
+}
+
+.grid{
+    width: 300px;
+    height: 300px;
+}
