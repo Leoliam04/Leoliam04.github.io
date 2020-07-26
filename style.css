@@ -1,4 +1,8 @@
 ﻿
+* {
+  scrollbar-width: 12px;
+  scrollbar-color: #595959 #ffffff;
+}
 
 .scroller {
     width: 100%;
