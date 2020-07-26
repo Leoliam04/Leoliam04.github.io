@@ -5,8 +5,8 @@
     margin-left: 0px;
     padding-left: 0px;
     left: 0px;
-    margin-top: 6%;
-    height: 85vh;
+    margin-top: 10vh;
+    height: 90vh;
     overflow-y: scroll;
     scrollbar-color: darkgray; 
     scrollbar-width: thick;
@@ -71,6 +71,7 @@ body{
     padding: 0px;
     margin: 0px;
     top: 0px;
+    border-radius: 50%;
 }
 
 .MainHeading {
