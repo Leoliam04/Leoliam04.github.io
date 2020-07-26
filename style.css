@@ -1,4 +1,20 @@
-﻿body{
+﻿
+
+.scroller {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    left: 0px;
+    margin-top: 6%;
+    height: 85vh;
+    overflow-y: scroll;
+    scrollbar-color: darkgray; 
+    scrollbar-width: thick;
+}
+
+
+body{
+    overflow: hidden;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -7,15 +23,24 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: fixed;
     top: 0;
-    left:0;
-    width:100%;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .PLINK {
+    padding: 0px;
+    margin: 0px;
     float: right;
+}
+
+.PLINK:hover {
+    background-color: #555;
+    color: white;
 }
 
 .PAGE {
@@ -26,42 +51,132 @@
     text-align: center;
     text-decoration:none;
     height: 4%;
+    font-size: 1.5vmax;
 }
 
-.PLINK:hover {
+.PLINK:hover .PAGE{
     background-color: #555;
     color: white;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #c29e00;
     color: white;
 }
 
+.icon {
+    float: left;
+    width: 24%;
+    height: 20%;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+}
+
 .MainHeading {
-    background-color:lightgray;
+    background-image: linear-gradient(white,#555);
+    padding-top: 10%;
+    float: left;
+    left: 0px;
+    padding-left: 0px;
     border-style: solid;
-    border-color: #555;
-    width: 40%;
-    height: 50%;
-    padding-top:12%;
-    float:left;
-    left:2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.MainHeading h1, h4 {
+    padding-left: 70px;
+    padding-right: 100px;
 }
 
 .HeadingBack {
-    background-image: url('Images/planet_back.jpg');
-    height:100%;
-    width:100%;
-    left:0;
-    padding-bottom:4%;
+    background-image: url('Images/Background.jpg');
+    height: 100%;
+    width: 100%;
+    left: 0;
+    padding-left: 0px;
+    padding-bottom: 1%;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#indexBack {
+    background-image: url('Images/Background.jpg');
+    height: 50%;
+    width: 100%;
+    left: 0;
+    padding-left: 0px;
+    padding-bottom: 10%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
 }
 
 .dividing {
-    padding-bottom: 10%;
+    padding-bottom: 30%;
+    clear: both;
+    width: 90%;
 }
 
-.grid{
-    width: 300px;
+.grid {
+    width: 500px;
     height: 300px;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.headingList {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageList {
+    width: 20%;
+    height: 18%;
+    float: right;
+    border: solid;
+    border-color: black;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#copywritebar {
+    background-color: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: inset;
+    text-align: center;
+    clear: both;
+    margin-top: 40px;
+    left: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 99%;
+    padding: 0px;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+}
+
+p {
+    height: 200px;
+}
+
+.downloadButton {
+    display: block;
+    background-color: #c29e00;
+    color: white;
+    width: 15%;
+    height: 10%;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
